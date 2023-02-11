@@ -1,5 +1,5 @@
 public class Sorter {
-    void selectionSort(int arr[])
+    static void selectionSort(int arr[])
     {
         int n = arr.length;
  
@@ -54,6 +54,7 @@ public class Sorter {
         }
         static void sort(int[] array){
             Insertionsort(array);
+            selectionSort(array);
         }
 }
     
