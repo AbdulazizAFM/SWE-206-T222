@@ -35,11 +35,11 @@ public class Sorter {
     {
         Sorter ob = new Sorter();
         int arr[] = {64,25,12,22,11};
-        ob.Insertionsort(arr);
+        Insertionsort(arr);
         System.out.println("Sorted array");
         ob.printArray(arr);
     }
-    void Insertionsort(int arr[])
+    static void Insertionsort(int arr[])
         {
             int n = arr.length;
             for (int i = 1; i < n; ++i) {
@@ -51,6 +51,9 @@ public class Sorter {
                 }
                 arr[j + 1] = key;
             }
+        }
+        static void sort(int[] array){
+            Insertionsort(array);
         }
 }
     
